@@ -8,6 +8,13 @@
 using namespace std;
 
 int main(void){
-    
+    string name;
+
+    cout << "What school did u graduate? : ";
+
+    cin >> name;
+
+    cout << "You graduated " << name << endl;
+
     return 0;
 }
