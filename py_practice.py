@@ -1,3 +1,3 @@
-name = "404"
+import random
 
-print(f"My name is {name}")
+print(random.sample(range(10)))
