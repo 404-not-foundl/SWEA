@@ -7,21 +7,22 @@
 
 using namespace std;
 
-int main(void){
-    vector<int> list;
-
-    for(int i = 0; i < 10; i++){
-        list.push_back(i);
-    }
-    
-    for(int i = 0; i < 10; i++){
-        list.erase(list.begin());
-    }
-    
+void print_vector(vector<int> list){
     for(int i = 0; i < list.size(); i++) cout << list[i] << " ";
     cout << endl;
-    cout << list.empty() << endl;
+}
 
+int main(void){
+    int ten = 10;
+    vector<int> list;
+
+    while(ten > 0){
+        list.push_back(ten);
+
+        ten--;
+    }
+
+    print_vector(list);
 
     return 0;
 }
